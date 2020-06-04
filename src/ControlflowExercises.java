@@ -3,11 +3,12 @@ public class ControlflowExercises {
         for(int i = 5; i <= 15; i += 1){
         System.out.println(i);
         }
-       int j = 105;
-do {
-       j -= 5;
-       System.out.println(j);
+       long j = 2;
 
-    } while (j >= -5);
+do {
+       System.out.println(j);
+     j *= j;
+
+    } while (j < 1000000);
     }
 }
