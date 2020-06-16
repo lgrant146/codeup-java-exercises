@@ -1,10 +1,10 @@
 package movies;
-import util.input;
+import util.Input;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MoviesApplication {
-    static input input = new input();
+    static Input input = new Input();
 
     static Movie[] movies = MoviesArray.findAll();
     public static void main(String[] arg){

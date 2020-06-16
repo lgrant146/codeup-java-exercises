@@ -2,10 +2,10 @@ package util;
 
 import java.util.Scanner;
 
-public class input {
+public class Input {
     private Scanner sc;
 
-    public input() {
+    public Input() {
         this.sc = new Scanner(System.in).useDelimiter("\n");
     }
 

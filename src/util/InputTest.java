@@ -2,7 +2,7 @@ package util;
 
 public class InputTest {
     public static void main(String[] args){
-        input in = new input();
+        Input in = new Input();
 //        String favSentence = in.getString("Please enter your favorite sentence!");
 //        System.out.println(favSentence);
 
