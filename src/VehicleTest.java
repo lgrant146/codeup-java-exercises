@@ -1,8 +1,8 @@
 public class VehicleTest {
     public static void main(String[] args) {
-        Vehicle a = new Vehicle();
-        Car b = new Car();
-        Jet c = new Jet();
+        Vehicle a = new Car();
+        Vehicle b = new Car();
+        Vehicle c = new Jet();
 
         a.setOperable(true);
         a.setPassengerCapacity(2);
