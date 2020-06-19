@@ -29,13 +29,19 @@ public class Input {
 
     }
     public int getInt() {
-        if (sc.hasNextInt()) {
-            return sc.nextInt();
-        } else {
-            System.out.println("Invalid input. Enter valid integer.");
-            sc.next();
+//        if (sc.hasNextInt()) {
+//            return sc.nextInt();
+//        } else {
+//            System.out.println("Invalid input. Enter valid integer.");
+//            sc.next();
+//            return getInt();
+//        }
+        try {
+            return Integer.valueOf(this.getString("Enter an integer:"));
+        } catch (NumberFormatException e) {
             return getInt();
         }
+
     }
 
     public int getInt(int min, int max) {
@@ -49,12 +55,17 @@ public class Input {
     }
 
     public double getDouble() {
-        if (sc.hasNextDouble()) {
-            return sc.nextDouble();
-        } else {
-            System.out.println("Invalid input. Enter valid number.");
-            sc.next();
-            return getInt();
+//        if (sc.hasNextDouble()) {
+//            return sc.nextDouble();
+//        } else {
+//            System.out.println("Invalid input. Enter valid number.");
+//            sc.next();
+//            return getInt();
+//        }
+        try {
+            return Double.valueOf(this.getString("Enter a decimal number:"));
+        } catch (NumberFormatException e) {
+            return getDouble();
         }
     }
 
